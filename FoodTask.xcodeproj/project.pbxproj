@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		39310BE12DCA36F300DC49C0 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 39310BE02DCA36F300DC49C0 /* SDWebImageSwiftUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		392BBC022DC9E9D900070881 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		392BBC0B2DC9E9D900070881 /* FoodTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		392BBC8C2DCA0AD600070881 /* Exceptions for "FoodTask" folder in "FoodTask" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 392BBBF02DC9E9D800070881 /* FoodTask */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		392BBBF32DC9E9D800070881 /* FoodTask */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				392BBC8C2DCA0AD600070881 /* Exceptions for "FoodTask" folder in "FoodTask" target */,
+			);
 			path = FoodTask;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39310BE12DCA36F300DC49C0 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +96,7 @@
 				392BBBF32DC9E9D800070881 /* FoodTask */,
 				392BBC042DC9E9D900070881 /* FoodTaskTests */,
 				392BBC0E2DC9E9D900070881 /* FoodTaskUITests */,
+				39310BDF2DCA36F300DC49C0 /* Frameworks */,
 				392BBBF22DC9E9D800070881 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +109,13 @@
 				392BBC0B2DC9E9D900070881 /* FoodTaskUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		39310BDF2DCA36F300DC49C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +138,7 @@
 			);
 			name = FoodTask;
 			packageProductDependencies = (
+				39310BE02DCA36F300DC49C0 /* SDWebImageSwiftUI */,
 			);
 			productName = FoodTask;
 			productReference = 392BBBF12DC9E9D800070881 /* FoodTask.app */;
@@ -195,6 +222,9 @@
 			);
 			mainGroup = 392BBBE82DC9E9D800070881;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				39310BA52DCA34F000DC49C0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 392BBBF22DC9E9D800070881 /* Products */;
 			projectDirPath = "";
@@ -399,6 +429,7 @@
 				DEVELOPMENT_TEAM = J245LV52UG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +459,7 @@
 				DEVELOPMENT_TEAM = J245LV52UG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39310BA52DCA34F000DC49C0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39310BE02DCA36F300DC49C0 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39310BA52DCA34F000DC49C0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 392BBBE92DC9E9D800070881 /* Project object */;
 }
